@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Portlet Tools</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="header">
+			<h1><img src="img/plugin-icon-32.png" />Portlet Tools</h1>
+		</div>
+		<div class="preface">
+			A set of plugins to add portlet (JSR 168 and JSR 286) support to Eclipse. It includes for both the JSR 168 and JSR 286, the API, XSD and TLDs. It is planning to support editors for the portlet descriptors and wizards to generate new project and portlets.		
+		</div>
+		<div class="release">
+			<h2>Current release</h2>
+			<p>
+				The current release, version 0.2.0, contains the following features:
+			</p>
+			<ul>
+				<li>Add support for several portlet specifications. JSR 168 and JSR 286 support is available at the same update site</li>
+				<li>Configuration of the portlet specifications using WTP facets</li>
+				<li>Classpath container to make the API part of the environment instead of dedicated project libraries. For WTP Facet projects the specification version is derived from the facet settings. Other projects can set the specification while adding or updating the classpath library.</li>
+				<li>Web facet available for dynamic web projects (<a href="http://www.eclipse.org/webtools/">WTP extension</a>)</li> 
+				<li>Integration of JSR 168 API, XSD and TLD (<a href="http://jcp.org/en/jsr/detail?id=168">http://jcp.org/en/jsr/detail?id=168</a>)</li>
+				<li>Integration of JSR 286 API, XSD and TLD (<a href="http://jcp.org/en/jsr/detail?id=286">http://jcp.org/en/jsr/detail?id=286</a>)</li>
+				<li>Integration into Project Explorer delivering an overview of the first-level elements of the portlet.xml</li>
+				<li>Initial release of a Portlet Descriptor Editor allowing the user to edit the XML with the following advantages:
+					<ul>
+						<li>Content assist for:
+							<ul>
+								<li>classname lookup of portlet, filter and listeners</li>
+								<li>container runtime option names lookup</li>
+								<li>security roles based upon the content of web.xml</li>
+								<li>resourcebundle name lookup</li>
+								<li>portlet mode and window state lookup for support-element of the portlet definition</li>
+								<li>allowed values for cache-scope of portlet definitions</li>
+								<li>allowed values for lifecycle of filter definitions</li>
+								<li>allowed values for transport guarantees of security constraint definitions</li>
+							</ul>
+						</li>
+						<li>Opening portlet, filter and listeners classes from within the editor</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="setup">
+			<h2>Installation</h2>
+			<p>
+				<i>Requirements:</i>
+				<ul>
+					<li>Eclipse 3.5.1 - Eclipse IDE for Java EE Developers, or the WTP/XML plugins</li>
+					<li>Java 1.6 (perhaps also on Java 1.5)</li>
+				</ul>
+			</p>
+			<p style="padding-top: 20px">
+				The current site supports the following installations:
+			</p>
+			<ul>
+			  <li>Using the online Eclipse update site: <a href="http://portlet-eclipse.sourceforge.net/update">http://portlet-eclipse.sourceforge.net/update</a></li>
+			  <li>Download the eclipse P2 update site, for local usage or to extract the plug-ins and features: <a href="https://sourceforge.net/project/showfiles.php?group_id=217522">Sourceforge.net download site</a></li>
+			</ul>
+		</div>
+		<div class="screenshots">
+			<h2>Screenshots</h2>
+			<ul>
+				<li><a href="screenshots/0.2/projectExplorer.jpeg">Project explorer integration</a></li>
+				<li><a href="screenshots/0.2/wtpFacet.jpeg">WTP Facet</a></li>
+				<li><a href="screenshots/0.2/sseContentAssistPortletClass.jpeg">Portlet Descriptor Editor: content assistance on portlet class</a></li>
+				<li><a href="screenshots/0.2/sseContentAssistSecurityRole.jpeg">Portlet Descriptor Editor: content assistance on security role</a></li>
+			</ul>
+		</div>
+		<div class="roadmap">
+			<h2>Roadmap</h2>
+			<p>The following features and enhancement are identified for the roadmap:<p>
+			<ul>
+				<li>Extending the Portlet Descriptor Editor (portlet.xml)</li>
+				<li>New wizards to generate new portlets en portlet applications</li>
+				<li>Support portlet containers like Pluto, Jetspeed, JBoss Portal and Liferay</li>
+			</ul>
+		</div>
+		
+		<div class="links">
+			<h2>Links</h2>
+			<ul>
+				<li><a href="https://sourceforge.net/projects/portlet-eclipse/">SourceForge Project Page</a>
+			</ul>
+		</div>
+		
+		<div class="sfbar">
+		  <a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=217522&amp;type=2" width="125" height="37" border="0" alt="SourceForge.net Logo" /></a>
+		</div>
+	</body>
+</html>
